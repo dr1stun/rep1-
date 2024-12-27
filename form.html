@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация пользователя</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <h1>Мой Русский Охотничий Спаниель</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="Sparki!.html">Главная</a></li> <!-- Ссылка на главную страницу -->
+                <li><a href="form.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Форма регистрации -->
+        <section class="registration-section">
+            <h2>Регистрация нового пользователя</h2>
+            <form action="#" method="POST" class="registration-form">
+                <!-- Личная информация -->
+                <fieldset>
+                    <legend>Личная информация</legend>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+                    <label for="birthdate">Дата рождения:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+
+                    <label for="gender">Пол:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Мужчина</option>
+                        <option value="female">Женщина</option>
+                    </select>
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" placeholder="Пароль" required>
+
+                </fieldset>
+
+                <!-- Контактные данные -->
+                <fieldset>
+                    <legend>Контактные данные</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (123) 456-78-90" required>
+
+                    <label for="contact-time">Удобный интервал для связи:</label>
+                    <select id="contact-time" name="contact-time" required>
+                        <option value="morning">Утро</option>
+                        <option value="afternoon">День</option>
+                        <option value="evening">Вечер</option>
+                        <option value="night">Ночь</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Зарегистрироваться <i class="fas fa-user-plus"></i></button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <p>Создано с любовью к собакам ❤️</p>
+        <ul class="footer-menu">
+            <li><a href="Sparki!.html">Главная</a></li>
+            <li><a href="form.html">Регистрация</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
