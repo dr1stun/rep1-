@@ -1,57 +1,135 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+/* Подключение шрифта Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Используем шрифт Roboto */
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+    /* Цвет текста */
+    width: 100%;
+    min-height: 100vh;
+}
+
 header {
+    font-family: 'Press Start 2P', sans-serif;
     background-color: #8fb996;
     color: white;
     text-align: center;
     padding: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    /* Жирный текст */
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
-/* bo {
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    /* Сзади белый фон  */
-    /* border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-} */
 
-h1, h2 {
+h1 {
     text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    /* Очень жирный текст */
+    color: #ffffff;
+    /* Цвет текста */
 }
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    /* Средняя жирность текста */
+    color: #ffffff;
+    /* Цвет текста */
+}
+
 .photo {
     text-align: center;
-    margin: 15px 0;
-    margin-top: 20px;
+    margin: 20px 0;
 }
+
 .photo img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    float: none;
-    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); */
+    /* Скругление углов */
+    border: 2px solid #8fb996;
+    /* Граница изображения */
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.8;
+    /* Межстрочный интервал */
     text-align: justify;
+    font-size: 14px;
+    color: #4f4f4f;
+    /* Цвет текста */
 }
+
 footer {
+    font-family: 'Press Start 2P', sans-serif;
     text-align: center;
     padding: 10px;
     background-color: #8fb996;
     color: white;
-    /* position: fixed; */
     bottom: 0;
     width: 100%;
-    text-align: center;
+    font-size: 14px;
+    position: relative;
+    z-index: 5;
 }
+
+a {
+    color: #3498db;
+    /* Цвет ссылок */
+    text-decoration: none;
+    /* Убираем подчеркивание */
+}
+
+a:hover {
+    color: #2c3e50;
+    /* Цвет ссылок при наведении */
+    text-decoration: underline;
+    /* Подчеркивание при наведении */
+}
+
 li {
-    line-height: 1.6;
+    line-height: 1.8;
+    /* Межстрочный интервал */
     text-align: justify;
+    font-size: 14px;
+    color: #4f4f4f;
+    /* Цвет текста */
+}
+
+button {
+    background-color: #8fb996;
+    /* Цвет фона кнопки */
+    color: white;
+    /* Цвет текста кнопки */
+    border: none;
+    /* Убираем границы */
+    border-radius: 5px;
+    /* Скругление углов */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #6d9975;
+    /* Изменение цвета при наведении */
 }
